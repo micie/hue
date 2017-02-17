@@ -1956,7 +1956,7 @@ var EditorViewModel = (function() {
               });
             }
 
-            if (self.coordinatorUuid()) {
+            if (self.coordinatorUuid() && self.schedulerViewModel) {
               self.saveScheduler();
               self.schedulerViewModel.coordinator.refreshParameters();
             }
